@@ -6,6 +6,6 @@ const methods = require('./methods');
 
 app.use(express.json());
 
-app.post('/sendJob', methods.sendJob);
+app.post('/sendFile', methods.sendFile);
 
 app.listen(3333, () => console.log('Server running'));

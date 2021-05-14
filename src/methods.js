@@ -4,7 +4,7 @@ const SpeechToTextV1 = require('ibm-watson/speech-to-text/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
 
 module.exports = {
-  async sendJob(req, res) {
+  async sendFile(req, res) {
     const { fileName, contentType, model, keywords, keywordsThreshold } =
       req.body;
 
@@ -20,6 +20,9 @@ module.exports = {
         model,
         keywords,
         keywordsThreshold,
+        // maxAlternatives: 3,
+        // wordConfidence: true,
+        // smartFormatting: true,
       };
 
       const result = await speechToText.recognize(params);
