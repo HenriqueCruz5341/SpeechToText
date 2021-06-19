@@ -1,0 +1,20 @@
+{
+  "name": "speech-to-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^4.5.2",
+    "@google-cloud/storage": "^5.8.5",
+    "ibm-watson": "^6.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^9.0.2"
+  }
+}

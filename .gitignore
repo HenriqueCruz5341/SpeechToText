@@ -3,3 +3,4 @@ node_modules
 .vscode
 resources
 results
+api-key.json
